@@ -295,7 +295,7 @@ body {
 }
 
 .team-list-description {
-  padding: 32px 32px;
+  padding: 32px 0;
 }
 .team-list-title {
   font-weight: 500;
@@ -336,7 +336,7 @@ body {
 }
 
 .team-list-item:hover .team-social-link,
-.team-list-item:focus .team-social-link {
+.team-social-link:focus {
   background-color: #404bbf;
 }
 
