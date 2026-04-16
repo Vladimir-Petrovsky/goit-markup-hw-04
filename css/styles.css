@@ -168,7 +168,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 1440px;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 188px;
 }
 
@@ -293,10 +294,9 @@ body {
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.team-list-img {
-  margin-bottom: 32px;
+.team-list-description {
+  padding: 32px 32px;
 }
-
 .team-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -332,6 +332,7 @@ body {
 .team-social-icon {
   width: 16px;
   height: 16px;
+  fill: #f4f4fd;
 }
 
 .team-list-item:hover .team-social-link,
@@ -364,7 +365,7 @@ body {
 
 .portfolio-list-item {
   padding-bottom: 32px;
-  transform: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:nth-child(-n + 3) {
@@ -390,6 +391,11 @@ body {
   color: #2e2f42;
 
   margin-bottom: 8px;
+  margin-left: 16px;
+}
+
+.portfolio-list-text {
+  margin-left: 16px;
 }
 
 .portfolio-thumb {
@@ -397,11 +403,6 @@ body {
   display: flex;
   margin-bottom: 32px;
   overflow: hidden;
-
-  /* border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-*/
 }
 
 .portfolio-thumb::before {
@@ -427,11 +428,8 @@ body {
   display: block;
   position: absolute;
   height: 100%;
-
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
-
+  padding: 40px 32px;
+  background-color: #4d5ae5;
   color: #f4f4fd;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
