@@ -163,10 +163,12 @@ body {
 .hero {
   background-color: rgb(46, 47, 66);
   background-image:
-    linear-gradient(rgba(46, 47, 66, 0.7)), url(../images/hero-img.jpg);
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-width: 1440px;
   padding: 188px;
 }
 
@@ -239,9 +241,11 @@ body {
   height: 112px;
   margin-bottom: 8px;
 
+  border-radius: 4px;
   background-color: #f4f4fd;
   background-repeat: no-repeat;
   background-position: center;
+  border: 1px solid #8e8f99;
 }
 .features-antenna::before {
   background-image: url(../images/antenna-1.svg);
@@ -393,6 +397,11 @@ body {
   display: flex;
   margin-bottom: 32px;
   overflow: hidden;
+
+  /* border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+*/
 }
 
 .portfolio-thumb::before {
@@ -438,6 +447,7 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-thumb {
   margin-right: 120px;
@@ -463,7 +473,7 @@ body {
 
 .footer-social-list {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   justify-content: center;
 }
 
@@ -481,6 +491,7 @@ body {
 .footer-social-icon {
   width: 16px;
   height: 16px;
+  fill: #f4f4fd;
 }
 
 .footer-social-link:hover,
